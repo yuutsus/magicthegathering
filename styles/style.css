@@ -1,0 +1,702 @@
+body {
+  margin: 0;
+
+  text-align: center;
+
+  background-color: rgb(31, 31, 31);
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+  color: rgb(204, 255, 133);
+  margin-bottom: 10px;
+  text-shadow: 4px 4px 18px rgba(204, 255, 133, 0.71);
+}
+
+nav {
+  margin-top: 40px;
+}
+
+img {
+  width: 300px;
+  height: 400px;
+box-shadow: -1px 0px 87px -10px rgba(204,255,133,0.75);
+-webkit-box-shadow: -1px 0px 87px -10px rgba(204,255,133,0.75);
+-moz-box-shadow: -1px 0px 87px -10px rgba(204,255,133,0.75);
+}
+
+#head {
+  margin-top: 50px;
+}
+
+#span1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(73, 197, 255);
+  text-shadow: 4px 4px 18px rgba(73, 197, 255, 0.71);
+  margin-bottom: 200px;
+}
+
+#span2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#menu {
+  margin-left: -1085px;
+}
+
+#logo {
+  width: 750px;
+  height: 220px;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.test {
+  margin-left: -15px;
+  width: 17vw;
+  border-right: 2px double rgba(255, 255, 255, 0.71);
+}
+
+#names {
+  display: inline-block;
+  width: 15vw;
+  margin-left: 250px;
+}
+
+#names p {
+  text-transform: uppercase;
+  display: inline-block;
+
+  color: rgb(0, 0, 0);
+}
+
+#names span {
+  display: inline-block;
+
+  width: 80px;
+  height: 20px;
+  padding: 1em 2em;
+
+  font-size: 10px;
+  text-decoration: none;
+  text-align: center;
+
+  color: rgb(255, 72, 40);
+  background-color: rgb(255, 228, 72);
+  border: 0.1em solid rgb(255, 72, 40);
+}
+
+#names span:active {
+  transform: translateY(4px);
+}
+
+#names div p {
+  color: white;
+  cursor: pointer;
+}
+
+#names div p:hover {
+  transition: 1s;
+  color: #ff6f00;
+  text-shadow: 4px 4px 18px rgba(255, 111, 0, 0.71);
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 110px;
+
+  width: 50vw;
+}
+
+.seperate {
+  display: flex;
+  flex-direction: column;
+}
+
+.seperate div {
+  display: flex;
+  flex-direction: row;
+}
+
+.seperate:first-child {
+  margin-right: 30px;
+}
+
+
+#info div h3 {
+  color: rgb(73, 197, 255);
+  font-size: 20px;
+  margin-right: 20px;
+  text-shadow: 4px 4px 18px rgba(73,197,255,0.71);
+}
+
+#info div p {
+  color: white;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: inherit;
+}
+
+.disabled {
+  background-color: rgb(53, 53, 53) !important;
+  pointer-events: none;
+}
+
+#previous-button {
+  margin: 10px;
+  width: 140px;
+  height: 45px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#previous-button:hover {
+  background-color: #ff6f00;
+  box-shadow: 0px 15px 20px rgba(229, 125, 46, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#previous-button:focus {
+  outline: 0;
+}
+#previous-button:before,
+#previous-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+#previous-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #ff6f00 20%, transparent 30%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ff6f00 15%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+}
+#previous-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ff6f00 15%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+#previous-button:active {
+  transform: scale(0.9);
+  background-color: #ff6f00;
+  box-shadow: 0 2px 25px rgba(255, 123, 0, 0.2);
+}
+#previous-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+#previous-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+#next-button {
+  margin: 10px;
+  width: 140px;
+  height: 45px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#next-button:hover {
+  background-color: #ff6f00;
+  box-shadow: 0px 15px 20px rgba(229, 125, 46, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#next-button:focus {
+  outline: 0;
+}
+#next-button:before,
+#next-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+#next-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #ff6f00 20%, transparent 30%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ff6f00 15%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+}
+#next-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ff6f00 15%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%),
+    radial-gradient(circle, #ff6f00 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+#next-button:active {
+  transform: scale(0.9);
+  background-color: #ff6f00;
+  box-shadow: 0 2px 25px rgba(255, 123, 0, 0.2);
+}
+#next-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+#next-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+#all-button {
+  margin: 10px;
+  width: 140px;
+  height: 45px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#all-button:hover {
+  background-color: rgba(198, 255, 118, 0.782);
+  box-shadow: 0px 15px 20px rgba(128, 229, 46, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#all-button:focus {
+  outline: 0;
+}
+#all-button:before,
+#all-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+#all-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(
+      circle,
+      rgba(198, 255, 118, 0.782) 20%,
+      transparent 20%
+    ),
+    radial-gradient(
+      circle,
+      transparent 20%,
+      rgba(198, 255, 118, 0.782) 20%,
+      transparent 30%
+    ),
+    radial-gradient(circle, rgba(198, 255, 118, 0.782) 20%, transparent 20%),
+    radial-gradient(circle, rgba(198, 255, 118, 0.782) 20%, transparent 20%),
+    radial-gradient(
+      circle,
+      transparent 10%,
+      rgba(198, 255, 118, 0.782) 15%,
+      transparent 20%
+    ),
+    radial-gradient(circle, rgba(198, 255, 118, 0.782) 20%, transparent 20%),
+    radial-gradient(circle, rgba(198, 255, 118, 0.782) 20%, transparent 20%),
+    radial-gradient(circle, rgba(198, 255, 118, 0.782) 20%, transparent 20%),
+    radial-gradient(circle, rgba(198, 255, 118, 0.782) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+}
+#all-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(
+      circle,
+      rgba(198, 255, 118, 0.782) 20%,
+      transparent 20%
+    ),
+    radial-gradient(circle, rgba(198, 255, 118, 0.782) 20%, transparent 20%),
+    radial-gradient(
+      circle,
+      transparent 10%,
+      rgba(198, 255, 118, 0.782) 15%,
+      transparent 20%
+    ),
+    radial-gradient(circle, rgba(198, 255, 118, 0.782) 20%, transparent 20%),
+    radial-gradient(circle, rgba(198, 255, 118, 0.782) 20%, transparent 20%),
+    radial-gradient(circle, rgba(198, 255, 118, 0.782) 20%, transparent 20%),
+    radial-gradient(circle, rgba(198, 255, 118, 0.782) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+#all-button:active {
+  transform: scale(0.9);
+  background-color: rgba(198, 255, 118, 0.782);
+  box-shadow: 0 2px 25px rgba(255, 123, 0, 0.2);
+}
+#all-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+#all-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+#github-button {
+  margin: 10px;
+  width: 140px;
+  height: 45px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#github-button:hover {
+  background-color: rgba(73, 197, 255, 0.85);
+  box-shadow: 0px 15px 20px rgba(46, 180, 229, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#github-button:focus {
+  outline: 0;
+}
+#github-button:before,
+#github-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+#github-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(
+      circle,
+      rgba(73, 197, 255, 0.85) 20%,
+      transparent 20%
+    ),
+    radial-gradient(
+      circle,
+      transparent 20%,
+      rgba(73, 197, 255, 0.85) 20%,
+      transparent 30%
+    ),
+    radial-gradient(circle, rgba(73, 197, 255, 0.85) 20%, transparent 20%),
+    radial-gradient(circle, rgba(73, 197, 255, 0.85) 20%, transparent 20%),
+    radial-gradient(
+      circle,
+      transparent 10%,
+      rgba(73, 197, 255, 0.85) 15%,
+      transparent 20%
+    ),
+    radial-gradient(circle, rgba(73, 197, 255, 0.85) 20%, transparent 20%),
+    radial-gradient(circle, rgba(73, 197, 255, 0.85) 20%, transparent 20%),
+    radial-gradient(circle, rgba(73, 197, 255, 0.85) 20%, transparent 20%),
+    radial-gradient(circle, rgba(73, 197, 255, 0.85) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+}
+#github-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(
+      circle,
+      rgba(73, 197, 255, 0.85) 20%,
+      transparent 20%
+    ),
+    radial-gradient(circle, rgba(73, 197, 255, 0.85) 20%, transparent 20%),
+    radial-gradient(
+      circle,
+      transparent 10%,
+      rgba(73, 197, 255, 0.85) 15%,
+      transparent 20%
+    ),
+    radial-gradient(circle, rgba(73, 197, 255, 0.85) 20%, transparent 20%),
+    radial-gradient(circle, rgba(73, 197, 255, 0.85) 20%, transparent 20%),
+    radial-gradient(circle, rgba(73, 197, 255, 0.85) 20%, transparent 20%),
+    radial-gradient(circle, rgba(73, 197, 255, 0.85) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+#github-button:active {
+  transform: scale(0.9);
+  background-color: rgba(73, 197, 255, 0.85);
+  box-shadow: 0 2px 25px rgba(255, 123, 0, 0.2);
+}
+#github-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+#github-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+html {
+  scrollbar-face-color: #000000;
+  scrollbar-base-color: #000000;
+  scrollbar-3dlight-color: #000000;
+  scrollbar-highlight-color: #000000;
+  scrollbar-track-color: rgb(0, 0, 0);
+  scrollbar-arrow-color: rgb(0, 0, 0);
+  scrollbar-shadow-color: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  background-color: rgba(204, 255, 133, 0.71);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #b3aaaa;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgb(87, 87, 87);
+}
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: rgba(73, 197, 255, 0.71);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-corner {
+  background-color: rgba(73, 197, 255, 0.71);
+}
+::-webkit-resizer {
+  background-color: rgba(73, 197, 255, 0.71);
+}
