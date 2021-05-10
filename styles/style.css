@@ -37,6 +37,15 @@ box-shadow: -1px 0px 87px -10px rgba(204,255,133,0.75);
 -moz-box-shadow: -1px 0px 87px -10px rgba(204,255,133,0.75);
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
 #head {
   margin-top: 50px;
 }
